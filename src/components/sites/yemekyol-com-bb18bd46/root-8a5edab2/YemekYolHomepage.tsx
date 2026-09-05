@@ -268,11 +268,12 @@ function BrandMark({ className = "" }: { className?: string }) {
 
 function Wordmark({ compact = false }: { compact?: boolean }) {
   return (
-    <Image
+    <img
       alt="yemekyol"
       className={`h-auto object-contain ${compact ? "w-[160px] mix-blend-screen" : "w-[120px]"}`}
+      decoding="async"
       height={192}
-      priority={compact}
+      loading={compact ? "eager" : "lazy"}
       src={logoSrc}
       width={590}
     />
