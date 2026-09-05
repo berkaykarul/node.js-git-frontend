@@ -63,7 +63,7 @@ const features: Feature[] = [
   {
     title: "DashPass ile daha uygun teslimat",
     description:
-      "Üyeler DashPass siparişlerinde 0 $ teslimat ücreti, gel-al siparişlerinde %5 geri ödeme ve daha fazlasını kazanır. Üstelik ilk 30 gün ücretsiz.",
+      "Üyeler DashPass siparişlerinde 0 ₺ teslimat ücreti, gel-al siparişlerinde %5 geri ödeme ve daha fazlasını kazanır. Üstelik ilk 30 gün ücretsiz.",
     action: "DashPass’i keşfedin",
     image: `${imageRoot}/hero.jpg`,
     imageAlt: "DashPass ile daha uygun teslimat",
@@ -446,7 +446,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: AuthMode) => void }) {
           <Wordmark light />
         </div>
         <h1 className="font-heading text-[32px] font-black uppercase leading-none tracking-[-0.8px] md:text-[40px] md:leading-10">
-          İlk siparişte 0 $ teslimat ücreti
+          İlk siparişte 0 ₺ teslimat ücreti
         </h1>
         <p className="mt-2 text-xs font-medium text-white/90">Diğer ücretler geçerlidir</p>
         <form className="mt-8 w-full max-w-[560px]" onSubmit={submitAddress}>
@@ -528,7 +528,7 @@ function OfferNotice() {
       <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-4 px-6 py-3">
         <div className="flex items-center gap-3 text-sm text-[#191919]">
           <BrandMark className="h-4 w-7 text-[#eb1700]" />
-          <span>İlk siparişinizde 0 $ teslimat ücreti.</span>
+          <span>İlk siparişinizde 0 ₺ teslimat ücreti.</span>
         </div>
         <a className="shrink-0 text-sm font-bold text-[#191919] underline-offset-2 hover:underline" href="#feed">
           Tümünü gör
