@@ -265,11 +265,11 @@ function BrandMark({ className = "" }: { className?: string }) {
   );
 }
 
-function Wordmark({ light = false }: { light?: boolean }) {
+function Wordmark({ light = false, compact = false }: { light?: boolean; compact?: boolean }) {
   return (
     <span className={`flex items-center gap-3 ${light ? "text-white" : "text-[#191919]"}`}>
       <BrandMark className="h-7 w-11" />
-      <span className="font-heading text-[28px] font-black uppercase tracking-[0.12em] leading-none">
+      <span className={`font-heading font-black uppercase leading-none ${compact ? "text-[24px] italic tracking-[0.1em]" : "text-[28px] tracking-[0.12em]"}`}>
         YemekYol
       </span>
     </span>
@@ -443,7 +443,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: AuthMode) => void }) {
       </header>
       <div className="relative z-10 mx-auto flex max-w-[750px] flex-col items-center px-4 pb-16 pt-10 text-center text-white">
         <div className="mb-8">
-          <Wordmark light />
+          <Wordmark compact light />
         </div>
         <h1 className="font-heading text-[32px] font-black uppercase leading-none tracking-[-0.8px] md:text-[40px] md:leading-10">
           İlk siparişte 0 ₺ teslimat ücreti
