@@ -25,6 +25,7 @@ type Feature = {
 };
 
 const imageRoot = "/sites/yemekyol-com-bb18bd46/root-8a5edab2/images";
+const logoSrc = "https://cdn.builder.io/api/v1/image/assets%2F58a9cc1dcd0440bdb175065f02a9e1fa%2F6ee886c9c24b4f6799fa15cc151908ac?format=webp&width=800&height=1200";
 
 const partnerCards = [
   {
@@ -265,14 +266,16 @@ function BrandMark({ className = "" }: { className?: string }) {
   );
 }
 
-function Wordmark({ light = false, compact = false }: { light?: boolean; compact?: boolean }) {
+function Wordmark({ compact = false }: { compact?: boolean }) {
   return (
-    <span className={`flex items-center gap-3 ${light ? "text-white" : "text-[#191919]"}`}>
-      <BrandMark className="h-7 w-11" />
-      <span className={`font-heading font-black leading-none ${compact ? "text-[28px] italic tracking-[0.1em]" : "text-[28px] tracking-[0.12em]"}`}>
-        yemekyol
-      </span>
-    </span>
+    <Image
+      alt="yemekyol"
+      className={`h-auto object-contain ${compact ? "w-[195px]" : "w-[160px]"}`}
+      height={61}
+      priority={compact}
+      src={logoSrc}
+      width={390}
+    />
   );
 }
 
@@ -443,7 +446,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: AuthMode) => void }) {
       </header>
       <div className="relative z-10 mx-auto flex max-w-[750px] flex-col items-center px-4 pb-16 pt-10 text-center text-white">
         <div className="mb-8">
-          <Wordmark compact light />
+          <Wordmark compact />
         </div>
         <h1 className="font-heading text-[32px] font-black uppercase leading-none tracking-[-0.8px] md:text-[40px] md:leading-10">
           İlk siparişte 0 ₺ teslimat ücreti
