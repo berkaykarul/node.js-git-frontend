@@ -19,8 +19,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "YemekYol: Food, Grocery and Retail - Fast Same Day Delivery",
-  description: "YemekYol clone — $0 delivery fee on first order.",
+  title: "YemekYol: Yemek, market ve alışveriş — hızlı teslimat",
+  description: "YemekYol — İlk siparişte 0 $ teslimat ücreti.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="tr"
       className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
