@@ -19,8 +19,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "YemekYol: Yemek, market ve alışveriş — hızlı teslimat",
-  description: "YemekYol — İlk siparişte 0 ₺ teslimat ücreti.",
+  title: "yemekyol: Yemek, market ve alışveriş — hızlı teslimat",
+  description: "yemekyol — İlk siparişte 0 ₺ teslimat ücreti.",
 };
 
 export default function RootLayout({

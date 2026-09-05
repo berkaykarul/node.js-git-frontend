@@ -39,11 +39,11 @@ const partnerCards = [
     title: "İşletme Sahibi Ol",
     description:
       "Yeni müşteriler kazanın ve 30 güne kadar %0 komisyonla satışlarınızı büyütün.",
-    action: "YemekYol’a kaydolun",
+    action: "yemekyol’a kaydolun",
   },
   {
     icon: <Search aria-hidden="true" className="h-16 w-16 stroke-[1.4]" />,
-    title: "En iyi YemekYol deneyimini yaşayın",
+    title: "En iyi yemekyol deneyimini yaşayın",
     description:
       "Mahallenizin sunduğu en iyi seçenekleri tek bir uygulamada keşfedin.",
     action: "Uygulamayı indir",
@@ -133,12 +133,12 @@ const features: Feature[] = [
     imageAlt: "Dasher olun ve kazanmaya başlayın",
   },
   {
-    title: "YemekYol ile işletmenizi büyütün",
+    title: "yemekyol ile işletmenizi büyütün",
     description:
       "Büyük ve küçük işletmeler, yeni müşterilere ulaşmak, sipariş hacmini artırmak ve daha fazla satış yapmak için YemekYol ile iş ortaklığı kuruyor.",
     action: "İş ortağı olun",
     image: `${imageRoot}/grocery.jpg`,
-    imageAlt: "YemekYol ile işletmenizi büyütün",
+    imageAlt: "yemekyol ile işletmenizi büyütün",
     reverse: true,
   },
 ];
@@ -239,9 +239,9 @@ const footerColumns = [
     title: "İş yapın",
     links: [
       "Dasher olun",
-      "YemekYol işletmesi",
+      "yemekyol işletmesi",
       "Teslimatlarınız için Dasher bulun",
-      "İşletmeniz için YemekYol",
+      "İşletmeniz için yemekyol",
     ],
   },
 ];
@@ -269,8 +269,8 @@ function Wordmark({ light = false, compact = false }: { light?: boolean; compact
   return (
     <span className={`flex items-center gap-3 ${light ? "text-white" : "text-[#191919]"}`}>
       <BrandMark className="h-7 w-11" />
-      <span className={`font-heading font-black uppercase leading-none ${compact ? "text-[28px] italic tracking-[0.1em]" : "text-[28px] tracking-[0.12em]"}`}>
-        YemekYol
+      <span className={`font-heading font-black leading-none ${compact ? "text-[28px] italic tracking-[0.1em]" : "text-[28px] tracking-[0.12em]"}`}>
+        yemekyol
       </span>
     </span>
   );
@@ -636,13 +636,13 @@ function SiteFooter() {
         <div className="mt-12 flex flex-col gap-4 border-t border-[#e0e0e0] pt-8 text-xs text-[#767676] md:flex-row md:items-center md:justify-between">
           <a className="flex items-center gap-2 text-[#191919]" href="#top">
             <BrandMark className="h-5 w-8 text-[#eb1700]" />
-            <span className="font-heading text-sm font-black uppercase tracking-[0.14em]">YemekYol</span>
+            <span className="font-heading text-sm font-black tracking-[0.14em]">yemekyol</span>
           </a>
           <div className="flex flex-wrap gap-4">
             <a className="hover:underline" href="#terms">Hizmet koşulları</a>
             <a className="hover:underline" href="#privacy">Gizlilik</a>
             <a className="hover:underline" href="#locations">Teslimat bölgeleri</a>
-            <span>© 2026 YemekYol demo sürümü</span>
+            <span>© 2026 yemekyol demo sürümü</span>
           </div>
         </div>
       </div>
