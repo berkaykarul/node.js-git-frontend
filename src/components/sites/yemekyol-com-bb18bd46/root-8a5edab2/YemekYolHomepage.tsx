@@ -270,7 +270,7 @@ function Wordmark({ compact = false }: { compact?: boolean }) {
   return (
     <Image
       alt="yemekyol"
-      className={`h-auto object-contain ${compact ? "w-[160px]" : "w-[120px]"}`}
+      className={`h-auto object-contain ${compact ? "w-[160px] mix-blend-screen" : "w-[120px]"}`}
       height={192}
       priority={compact}
       src={logoSrc}
