@@ -25,7 +25,7 @@ type Feature = {
 };
 
 const imageRoot = "/sites/yemekyol-com-bb18bd46/root-8a5edab2/images";
-const logoSrc = "https://cdn.builder.io/api/v1/image/assets%2F58a9cc1dcd0440bdb175065f02a9e1fa%2F6ee886c9c24b4f6799fa15cc151908ac?format=webp&width=800&height=1200";
+const logoSrc = "https://cdn.builder.io/api/v1/image/assets%2F58a9cc1dcd0440bdb175065f02a9e1fa%2F7b331d3c67444dd9ba2251103596b901?format=webp&width=800&height=1200";
 
 const partnerCards = [
   {
@@ -270,11 +270,11 @@ function Wordmark({ compact = false }: { compact?: boolean }) {
   return (
     <Image
       alt="yemekyol"
-      className={`h-auto object-contain ${compact ? "w-[195px]" : "w-[160px]"}`}
-      height={61}
+      className={`h-auto object-contain ${compact ? "w-[160px]" : "w-[120px]"}`}
+      height={192}
       priority={compact}
       src={logoSrc}
-      width={390}
+      width={590}
     />
   );
 }
