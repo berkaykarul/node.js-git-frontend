@@ -269,7 +269,7 @@ function Wordmark({ light = false, compact = false }: { light?: boolean; compact
   return (
     <span className={`flex items-center gap-3 ${light ? "text-white" : "text-[#191919]"}`}>
       <BrandMark className="h-7 w-11" />
-      <span className={`font-heading font-black uppercase leading-none ${compact ? "text-[24px] italic tracking-[0.1em]" : "text-[28px] tracking-[0.12em]"}`}>
+      <span className={`font-heading font-black uppercase leading-none ${compact ? "text-[28px] italic tracking-[0.1em]" : "text-[28px] tracking-[0.12em]"}`}>
         YemekYol
       </span>
     </span>
